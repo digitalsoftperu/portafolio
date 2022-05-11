@@ -1,0 +1,192 @@
+/* Resetear navegador */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+    font-size: 18px;
+    padding: 90px 20px 0;
+}
+
+
+/* Configuracion de Cabecera o barra de navegacion */
+
+.header {
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+
+}
+
+.nav-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: none;
+    width: max-content;
+    color: #423F40;
+}
+
+.nav-menu-link {
+    padding: 8px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #222222;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+    background-color: #5D3BEF ;
+    color:rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.nav-toggle {
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+
+    display: none;
+}
+
+/* Configurar titulos, subtitulos y secciones */
+
+body {
+    font-family: Montserrat;
+    font-size: 16px;
+    padding: 90px 20px 0;
+}
+
+.title {
+    font-size: 150px;
+    font-weight: semibold;
+}
+
+.subtitle {
+    font-size: 50px;
+    font-weight: semibold;
+}
+
+.subsection {
+    font-size: 45px;
+}
+
+.flex-container {
+    background-color: burlywood;
+    border-radius: 10px;
+    border: solid 2px yellow;
+}
+
+.flex-container > * {
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px black;
+    border-radius: 10px;
+    background:rgb(255, 74, 74);
+}
+
+.flex-container {
+    display: flex;
+}
+
+
+/* @Media Query para mobile*/
+
+@media (max-width: 768px) {
+    body {
+        font-family: Montserrat;
+        padding-top: 70px;
+    }
+
+    .header {
+        background-color: rgb(255, 255, 255);
+        height: 60px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #423F40;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-item {
+        line-height: 70px;
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+        background: none ;
+        color: #5D3BEF;
+        transition: left 0.5s;
+        text-decoration: underline;
+    }
+
+    .nav-menu-link {
+        padding: 8px;
+        border-radius: 3px;
+        text-decoration:none  ;
+        color: white;
+    }
+
+    .nav-toggle {
+        display: block;
+        justify-content: left;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+    
+    .subsection {
+        font-size: 20px;
+    }
