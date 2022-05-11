@@ -1,5 +1,3 @@
-/* Resetear navegador */
-
 * {
     margin: 0;
     box-sizing: border-box;
@@ -10,9 +8,6 @@ body {
     font-size: 18px;
     padding: 90px 20px 0;
 }
-
-
-/* Configuracion de Cabecera o barra de navegacion */
 
 .header {
     background-color: rgb(255, 255, 255);
@@ -72,11 +67,9 @@ body {
     padding: 0 20px;
     line-height: 60px;
     cursor: pointer;
-
     display: none;
 }
 
-/* Configurar titulos, subtitulos y secciones */
 
 body {
     font-family: Montserrat;
@@ -84,38 +77,9 @@ body {
     padding: 90px 20px 0;
 }
 
-.title {
-    font-size: 150px;
-    font-weight: semibold;
-}
-
-.subtitle {
-    font-size: 50px;
-    font-weight: semibold;
-}
-
-.subsection {
-    font-size: 45px;
-}
-
-.flex-container {
-    background-color: burlywood;
-    border-radius: 10px;
-    border: solid 2px yellow;
-}
-
-.flex-container > * {
-    padding: 10px;
-    margin: 10px;
-    border: solid 1px black;
-    border-radius: 10px;
-    background:rgb(255, 74, 74);
-}
-
 .flex-container {
     display: flex;
 }
-
 
 /* @Media Query para mobile*/
 
@@ -178,15 +142,4 @@ body {
     .nav-menu_visible {
         left: 0;
     }
-
-    .title {
-        font-size: 50px;
-    }
-
-    .subtitle {
-        font-size: 24px;
-    }
-    
-    .subsection {
-        font-size: 20px;
-    }
+}
